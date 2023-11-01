@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Mukta:wght@200;300;400;500&family=Nosifer&family=Noto+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500&family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200&family=Roboto+Condensed:ital,wght@0,100;0,200;1,100;1,500&family=Roboto:ital,wght@0,100;1,100&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+font-family: 'Mukta', sans-serif;
+
+/* font-family: 'Noto Sans', sans-serif; */
+/* font-family: 'Nunito Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Rubik', sans-serif; */
+}
+
+body{
+    box-sizing: border-box;
+   background-color: #f2ebe3;
+   height: 100vh;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    margin-top: 15px;
+    align-items: center;
+    margin: 10px 17px;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: #757575;
+    margin-right: 5px;
+}
+.buttons button{
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #004D40;
+}
+
+.nav-item:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-top: 5px;
+    margin-left: -5em;
+    transition-duration: 10s;
+    top: 2.5em;
+}
+
+.dropdown{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    background-size: cover;
+    width: 350px;
+    padding:20px 10px;
+    position: absolute;
+    display: none;
+}
+
+.dropdown a h5 p{
+    position: relative;
+    width: 280px;
+    margin: 10px;
+    line-height: 15px;
+    font-weight: 500;
+}
+
+.toggle-list img{
+padding: 0px 5px;
+}
+.toggle-list a{
+    display: flex;
+    align-items: start; 
+    text-align: start; 
+    text-decoration: none;
+    color:#757575;
+    width: 110px;
+}
+.hamburger{
+    cursor: pointer;
+}
+.hamburger span{
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color:#9FA6B2;
+    display: block;
+   position: relative;
+}
+
+.toggle-list{
+    position: absolute;
+    width: 95%;
+    top: 3em;
+    background-color: white;
+    margin: 0px auto;
+    right: 2.5%;
+    float: none;
+}
+.toggle-list .nav-item{
+    position: relative;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    border: none;
+    /* color: #004D40; */
+}
+button:hover{
+    background-color: white;
+    color: #004D40;
+}
+.button:hover{
+    background-color: white;
+    color: #004D40;
+}
+.hide{
+    display: none;
+}
+@media (max-width:700px){
+   .nav-item:hover .dropdown{
+        display: none;   
+    }
+    .buttons{
+        display: none;
+    }
+    .text-section{
+        width: 100%;
+        max-width: 330px;
+        font-size: 0.6em;
+       padding: 15px 0px;
+        margin: auto;
+    }
+    .text-section p{
+        font-size: 15px;
+        margin: 5px 0px;
+        color:#757575;
+    }
+    .hero-image img{
+       display: none;
+        }
+        .logos img{
+            width: 165px;
+            margin: 10px 5px;
+        }
+}
+
+
+@media(min-width:700px){
+    .nav-bar{
+        justify-content: space-evenly;
+    }
+    .toggle-list{
+        display: flex;
+        position: static;
+        width: auto;
+        margin: 0px;
+        background-color: transparent;
+      }
+      .list .hide{
+        display: flex;
+
+      }
+    .hamburger{
+        display: none;
+    } 
+    .section{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 6em;
+    }
+    .logos img{
+        /* width: 160px; */
+        margin: 10px 10px;
+        padding: 0px 15px;
+    }
+    .text-section{
+        width: 60%;
+        max-width: 618px;
+        margin-top: 3em;
+    }
+}
+.text-section button{
+    width: 130px;
+    height: 50px;
+    border: none;
+    background-color: #004D40;
+    color: white;
+    border-radius: 5px;
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+.text-section h3{
+    font-size: 4em;
+    line-height: 1em;
+}
+.text-section p {
+    color:#757575;
+}
+.hero-image img{
+width: 50%px;
+max-width: 300px;
+}
+.text-section span{
+    color: #F7b300;
+}
+.text-icon{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+.footer{
+    margin-top: 3em;
+}
+.footer p{
+    text-align: center;
+    margin: 10px 0px;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+
+
